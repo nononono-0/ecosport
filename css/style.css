@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('reset.css');
+@import url('font.css');
+@import url('animation.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.screen1 {
+    position: relative;
+    width: 1280px;
+    height: 754px;
+    background-image: url("../assets/img/Group\ 21.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.block-info1 {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 15px;
+    top: 246px;
+    left: -332px;
+    width: 704px;
+    height: 342px;
+    background-color: #F5BB1B;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease-in-out;
+    cursor: pointer;
+}
+.text-info1-1 {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.text-info1-2 {
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    width: 429px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.block1-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 389px;
+    height: 223px;
+    background-color: #FFFFFF;
+    background-color: #FFFFFF;
+    animation: expandRight 2s ease-in-out infinite;
+}
+.block1-2 {
+    position: absolute;
+    top: 0px;
+    left: 582px;
+    width: 333px;
+    height: 125px;
+    background-color: #FFFFFF;
+    animation: expandDown 1.8s ease-in-out infinite;
+}
+.block1-3 {
+    position: absolute;
+    top: 0px;
+    left: 1005px;
+    width: 275px;
+    height: 198px;
+    background-color: #FFFFFF;
+    animation: expandLeft 2.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.block1-4 {
+    position: absolute;
+    top: 313px;
+    left: 1100px;
+    width: 180px;
+    height: 386px;
+    background-color: #FFFFFF;
+    animation: expandLeft 2s ease-in-out infinite;
+}
+.block1-5 {
+    position: absolute;
+    top: 417px;
+    left: 0px;
+    width: 199px;
+    height: 259px;
+    background-color: #FFFFFF;
+    animation: expandRight 2s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.point1 {
+    position: absolute;
+    top: 303px;
+    left: 715px;
+    width: 199px;
+    height: 199px;
+    background-image: url("../assets/img/Без\ названия\ \(2\)\ \(1\)\ 7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: point 1.5s ease-in-out infinite;
+}
+.screen2 {
+    position: relative;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    height: 720px;
+}
+.text-screen2 {
+    position: relative;
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    z-index: 1;
+}
+.red-number {
+    color: red;
+    font-size: 100px;
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 500;
+}
+#physics-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: auto;
+}
+.screen3 {
+    position: relative;
+    width: 1280px;
+    height: 789px;
+    background-image: url("../assets/img/Group\ 22.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.block-info2 {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    top: 326px;
+    left: 858px;
+    width: 752px;
+    height: 254px;
+    background-color: #5FACCA;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease-in-out;
+    cursor: pointer;
+}
+.text-info2-1 {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.text-info2-2 {
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    width: 542px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.block2-1 {
+    position: absolute;
+    top: 111px;
+    left: 0px;
+    width: 152px;
+    height: 201px;
+    background-color: #FFFFFF;
+    animation: expandRight 2s ease-in-out infinite;
+}
+.block2-2 {
+    position: absolute;
+    top: 312px;
+    left: 0px;
+    width: 305px;
+    height: 78px;
+    background-color: #FFFFFF;
+    animation: expandRight 2.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.block2-3 {
+    position: absolute;
+    top: 390px;
+    left: 0px;
+    width: 217px;
+    height: 320px;
+    background-color: #FFFFFF;
+    animation: expandRight 1.8s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.block2-4 {
+    position: absolute;
+    top: 97px;
+    left: 1048px;
+    width: 232px;
+    height: 253px;
+    background-color: #FFFFFF;
+    animation: expandLeft 2s ease-in-out infinite;
+}
+.block2-5 {
+    position: absolute;
+    top: 499px;
+    left: 1152px;
+    width: 128px;
+    height: 157px;
+    background-color: #FFFFFF;
+    animation: expandLeft 1.6s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.point2 {
+    position: absolute;
+    top: 190px;
+    left: 390px;
+    width: 199px;
+    height: 199px;
+    background-image: url("../assets/img/Без\ названия\ \(2\)\ \(1\)\ 7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: point 1.5s ease-in-out infinite;
+}
+.screen4 {
+    position: relative;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1280px;
+    height: 720px;
+    gap: 30px;
+}
+.screen4-text {
+    position: absolute;
+    top: 60px;
+    left: 388px;
+    width: 504px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.text-screen4-1 {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+.text-screen4-2 {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+}
+.screen4-text, .tires {
+    z-index: 10;
+}
+.tires {
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    width: 414px;
+    height: 372px;
+    background-image: url("../assets/img/Gemini_Generated_Image_tna8evtna8evtna8-Photoroom\ 2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tire-drag-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+    cursor: grab;
+}
+.tire-drag-element:active {
+    cursor: grabbing;
+}
+.machine {
+    position: absolute;
+    top: 300px;
+    left: 425px;
+    width: 429px;
+    height: 471px;
+    background-image: url("../assets/img/Group\ 28.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+.track-container {
+    position: absolute;
+    top: 500px;
+    left: 630px;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 1;
+}
+
+.track-segment {
+    width: 60px;
+    height: 120px;
+    background-color: #FF8C00;
+    margin-right: -2px;
+    position: relative;
+    flex-shrink: 0;
+    background-image: 
+        linear-gradient(to bottom, 
+            transparent 15%, white 15%, white 20%, 
+            transparent 20%, transparent 45%, white 45%, white 50%, 
+            transparent 50%, transparent 75%, white 75%, white 80%, 
+            transparent 80%);
+    animation: waveIn 0.6s ease-out forwards;
+}
+.mini-heart {
+    position: absolute;
+    font-size: 80px;
+    color: #F44236;
+    user-select: none;
+    pointer-events: none;
+    z-index: 0;
+    animation: heartAppear 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+.screen5 {
+    position: relative;
+    width: 1280px;
+    height: 789px;
+    background-image: url("../assets/img/Group\ 24.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+.block-info3 {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 15px;
+    top: 269px;
+    left: -423px;
+    width: 901px;
+    height: 364px;
+    background-color: #76B854;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+}
+.text-info3-1 {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.text-info3-2 {
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    width: 575px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.block3-1 {
+    position: absolute;
+    top: 147px;
+    left: 0px;
+    width: 175px;
+    height: 233px;
+    background-color: #FFFFFF;
+    animation: expandRight 2s ease-in-out infinite;
+    z-index: 2;
+}
+.block3-2 {
+    position: absolute;
+    top: 380px;
+    left: 0px;
+    width: 143px;
+    height: 179px;
+    background-color: #FFFFFF;
+    animation: expandRight 2.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+    z-index: 2;
+}
+.block3-3 {
+    position: absolute;
+    top: 559px;
+    left: 0px;
+    width: 287px;
+    height: 129px;
+    background-color: #FFFFFF;
+    animation: expandRight 1.8s ease-in-out infinite;
+    animation-delay: 0.5s;
+    z-index: 2;
+}
+.block3-4 {
+    position: absolute;
+    top: 124px;
+    left: 1019px;
+    width: 261px;
+    height: 337px;
+    background-color: #FFFFFF;
+    animation: expandLeft 2s ease-in-out infinite;
+}
+.block3-5 {
+    position: absolute;
+    top: 461px;
+    left: 1129px;
+    width: 151px;
+    height: 199px;
+    background-color: #FFFFFF;
+    animation: expandLeft 1.6s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.point3 {
+    position: absolute;
+    top: 93px;
+    left: 555px;
+    width: 199px;
+    height: 199px;
+    background-image: url("../assets/img/Без\ названия\ \(2\)\ \(1\)\ 7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: point 1.5s ease-in-out infinite;
+    z-index: 0;
+}
+.screen6 {
+    position: relative;
+    background-color: #FFFFFF; 
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.text-screen6 {
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+#canvas-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    cursor: crosshair;
+    z-index: 1;
+}
+.palette {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 0;
+    z-index: 10;
+}
+.color-tool {
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.color-tool:hover {
+    transform: scaleY(1.2);
+}
+.color-tool.active {
+    border-color: #333;
+}
+.screen7 {
+    position: relative;
+    width: 1280px;
+    height: 190px;
+    background-image: url("../assets/img/Group\ 25.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.screen7-container {
+    position: absolute;
+    top: 93px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.screen7-content {
+    display: inline-block;
+    animation: text-screen 12s linear infinite;
+    white-space: nowrap;
+    width: auto;
+}
+.text-info7 {
+    color: #FFFFFF;
+    font-family: 'Neutral Face', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    white-space: nowrap;
+    display: inline-block;
+    padding-right: 20px;
+}
+.block7 {
+    position: absolute;
+    top: 88px;
+    left: 45px;
+    width: 556px;
+    height: 102px;
+    background-color: #FFFFFF;
+    animation: expandUp 1.8s ease-in-out infinite;
+    z-index: 1;
+}
+.screen-hidden {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    transition: all 0.8s ease-in-out;
+}
+.screen2, .screen4, .screen6 {
+    transition: all 0.8s ease-in-out;
+    max-height: 1000px;
+    opacity: 1;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/x-icon" href="assets/favicon/point.ico" rel="icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+    <title>Ecosport</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="screen1">
+            <div class="block-info1" id="blockInfo1">
+                <p class="text-info1-1">
+                    Парадокс современного спорта: <span style="color: #F5BB1B;">.i</span>
+                </p>
+                <p class="text-info1-2">
+                    Мировая спортивная индустрия ежегодно производит миллионы тонн отходов: <br>от упаковки спортивного питания <br>до устаревшего оборудования <br>и строительных материалов стадионов. <br>При этом сам спорт позиционируется как часть здорового образа жизни. Этот диссонанс стал катализатором для поиска новых решений.
+                </p>
+            </div>
+            <div class="block1-1"></div>
+            <div class="block1-2"></div>
+            <div class="block1-3"></div>
+            <div class="block1-4"></div>
+            <div class="block1-5"></div>
+            <div class="point1" data-target="screen2"></div>
+        </div>
+        <div class="screen2">
+            <p class="text-screen2">
+                Спортивные мероприятия 
+                <br>генерируют 
+                <br><span class="red-number">750 000</span> 
+                <br>пластиковых бутылок
+                <br>на марафон
+            </p>
+            <div id="physics-container"></div>
+        </div>
+        <div class="screen3">
+            <div class="block-info2">
+                <p class="text-info2-1">
+                    Нидерланды: PlasticRoad
+                </p>
+                <p class="text-info2-2">
+                    В Роттердаме появилась первая в мире велодорожка из переработанного пластика. Секции производят<br>на фабрике, затем собирают на месте как конструктор. Внутри секций — пространство для кабелей и систем сбора воды. Для спорта — идеальное покрытие <br>для велодорожеки беговых трасс.
+                </p>
+            </div>
+            <div class="block2-1"></div>
+            <div class="block2-2"></div>
+            <div class="block2-3"></div>
+            <div class="block2-4"></div>
+            <div class="block2-5"></div>
+            <div class="point2" data-target="screen4"></div>
+        </div>
+        <div class="screen4">
+            <div class="screen4-text">
+                <p class="text-screen4-1">
+                    Автомобильные шины: универсальный строительный материал.<br>Покрытие детских площадок<br>и беговых дорожек — резиновая крошка толщиной 40-100 мм
+                </p>
+                <p class="text-screen4-2">
+                    <span id="counter" style="color: #F44236;">0</span> МЕТРОВ
+                </p>
+            </div>
+            <div class="tires">
+                <div class="tire-drag-element" draggable="true"></div>
+            </div>
+            <div class="machine"></div>
+            <div class="track-container" id="trackContainer"></div>
+        </div>
+        <div class="screen5">
+            <div class="block-info3" id="blockInfo3">
+                <p class="text-info3-1">
+                    Создание спортивных объектов<br>из вторсырья<span style="color: #76B854;">.................................................................................................</span>
+                </p>
+                <p class="text-info3-2">
+                    Это кардинально меняет традиционную финансовую модель, предлагая значительную экономию на начальном этапе. Стоимость материалов, полученных из отходов, <br>в среднем на 40-70% ниже, чем у первичного сырья. Например, резиновая крошка из шин для покрытия площадки обходится на 60% дешевле, чем новое резиновое покрытие, а строительство спортзала <br>из морских контейнеров может быть в 3-4 раза менее затратным, чем возведение капитального здания.
+                </p>
+            </div>
+            <div class="block3-1"></div>
+            <div class="block3-2"></div>
+            <div class="block3-3"></div>
+            <div class="block3-4"></div>
+            <div class="block3-5"></div>
+            <div class="point3" data-target="screen6"></div>
+        </div>
+        <div class="screen6">
+            <p class="text-screen6">
+                3D-печать спортивных<br> объектов
+            </p>
+            <div id="canvas-container"></div>
+            <div class="palette">
+                <div class="color-tool" style="background: #F44236;" data-color="#F44236"></div>
+                <div class="color-tool" style="background: #F5BB1B;" data-color="#F5BB1B"></div>
+                <div class="color-tool" style="background: #76B854;" data-color="#76B854"></div>
+                <div class="color-tool" style="background: #5FACCA;" data-color="#5FACCA"></div>
+            </div>
+        </div>
+        <div class="screen7">
+             <div class="screen7-container">
+                <div class="screen7-content">
+                    <span class="text-info7">Носкова Анастасия БРИЦП252</span>
+                    <span class="text-info7">Носкова Анастасия БРИЦП252</span>
+                    <span class="text-info7">Носкова Анастасия БРИЦП252</span>
+                </div>
+            </div>
+            <div class="block7"></div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
